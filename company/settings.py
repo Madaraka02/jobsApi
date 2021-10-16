@@ -139,8 +139,12 @@ USE_L10N = True
 USE_TZ = True
 
 # CORS
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:3000",
+    "http://localhost:3000",
+]
+
 # JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
 JWT_SECRET_KEY = 'fghjklpoiudhebdcnmxl'
 # Static files (CSS, JavaScript, Images)
